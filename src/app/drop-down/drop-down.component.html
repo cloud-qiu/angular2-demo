@@ -1,0 +1,6 @@
+<div>
+    <select name="selectData" [(ngModel)]="options" (change)="getSelectedValue($event.target.value)">
+        <option *ngFor="let option of options" [value]="option.value">
+            {{option.value}}</option>
+    </select>
+</div>
